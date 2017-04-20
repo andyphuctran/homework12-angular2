@@ -1,0 +1,5 @@
+<p>List of Items, click on item to change color</p>
+<ul>
+    <li *ngFor="let item of items" appUpper appMycolor appMyvisibility [visibility]="switch">{{item}}</li>
+</ul>
+<button (click)="onSwitch()"> Hide/UnHide</button>
